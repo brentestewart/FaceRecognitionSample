@@ -18,8 +18,8 @@ namespace FaceRecognition
         #region Properties
         public ICommand TrainCommand { get; set; }
         public ICommand IdentifyCommand { get; set; }
-        public string CameronDiazPath { get; set; } = $@"c:\dev\talks\visiontalk\images\facetraining\CameronDiaz";
-        public string TomCruisePath { get; set; } = $@"c:\dev\talks\visiontalk\images\facetraining\TomCruise";
+        public string CameronDiazPath { get; set; } = $@"c:\dev\talks\visiontalk\Sandbox\FaceRecognition\images\facetraining\CameronDiaz";
+        public string TomCruisePath { get; set; } = $@"c:\dev\talks\visiontalk\Sandbox\FaceRecognition\images\facetraining\TomCruise";
         public string Results { get; set; }
         public FaceServiceClient FaceServiceClient { get; set; }
 
