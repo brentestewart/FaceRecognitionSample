@@ -54,7 +54,7 @@ namespace FaceRecognition
             using (var fStream = File.OpenRead(pickedImagePath))
             {
                 var faces = await FaceServiceClient.DetectAsync(fStream);
-                var identifyResult = await FaceServiceClient.IdentifyAsync(faces.Select(ff => ff.FaceId).ToArray(), GroupId);
+                var identifyResult = await FaceServiceClient.IdentifyAsync(faces.Select(ff => ff.FaceId).ToArray(), null, GroupId);
 
                 var hasMatch = identifyResult.Length > 0 && identifyResult[0].Candidates.Length > 0;
                 if (hasMatch)
